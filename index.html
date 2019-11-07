@@ -9,6 +9,7 @@
 
 <body id="body">
 
+
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3600.89 3600.89" id="TestCircle">
     <defs>
       <style>
@@ -37,6 +38,7 @@
         }
       </style>
     </defs>
+
     <title>Test Circle</title>
     <g id="Layer_1" data-name="Layer 1">
       <path
@@ -70,11 +72,11 @@
       var totalDistance = distance + height;
       console.log(distance);
       console.log("totalDistance: " + totalDistance);
-      var degree1 = distance / 50;
+      var degree1 = -distance / 50;
       var degree2 = Math.floor(degree1);
       console.log(degree1);
       console.log(degree2);
-      testCircle.style.transform = "rotate(" + degree2 + "deg)"
+      testCircle.style.transform = "rotate(" + degree2 + "deg)";
 
     };
   </script>

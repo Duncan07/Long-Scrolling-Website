@@ -106,8 +106,28 @@ body {
 }
 #TestCircle {
   position: fixed;
-  top: -10vw;
-  left: -200vw;
-  width: 500vw;
-  height: 500vw;
+  top: -20vw;
+  left: -450vw;
+  width: 1000vw;
+  height: 1000vw;
+}
+
+@media only screen and (min-width: 1200px){
+  #TestCircle {
+    position: fixed;
+    top: -10vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  #TestCircle {
+    position: fixed;
+    top: -15vw;
+    left: -320vw;
+    width: 750vw;
+    height: 750vw;
+  }
 }

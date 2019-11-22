@@ -125,9 +125,18 @@ body {
 @media only screen and (min-width: 600px){
   #TestCircle {
     position: fixed;
-    top: -15vw;
-    left: -320vw;
-    width: 750vw;
-    height: 750vw;
+    top: -10vw;
+    left: -225vw;
+    width: 550vw;
+    height: 550vw;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  #Alert {
+    visibility: visible;
+    height: auto;
+    width: auto;
+    background: blue;
   }
 }

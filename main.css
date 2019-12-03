@@ -115,20 +115,58 @@ body {
 
 #Water {
   position: fixed;
-  top: -20vw;
-  left: -450vw;
-  width: 1000vw;
-  height: 1000vw;
+  top: -5vw;
+  left: -200vw;
+  width: 500vw;
+  height: 500vw;
   z-index: 5;
+  animation-name: water;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-
 #Water2MiniMe {
   position: fixed;
-  top: -20vw;
-  left: -450vw;
-  width: 1000vw;
-  height: 1000vw;
+  top: -5vw;
+  left: -200vw;
+  width: 500vw;
+  height: 500vw;
   z-index: 10;
+  animation-name: water2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#Water3 {
+  position: fixed;
+  top: -5vw;
+  left: -200vw;
+  width: 500vw;
+  height: 500vw;
+  z-index: 15;
+  animation-name: water;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#Water4 {
+  position: fixed;
+  top: -5vw;
+  left: -200vw;
+  width: 500vw;
+  height: 500vw;
+  z-index: 20;
+  animation-name: water2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#Water5 {
+  position: fixed;
+  top: -5vw;
+  left: -200vw;
+  width: 500vw;
+  height: 500vw;
+  z-index: 25;
+  animation-name: water;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 #Sky {

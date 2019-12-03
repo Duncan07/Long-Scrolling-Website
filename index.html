@@ -12,11 +12,18 @@
 
   <div id="Alert"></div>
 
-<img src="TestCircle4.svg" alt="" id="TestCircle">
+<img src="Sky.svg" alt="" id="Sky">
+<img src="World.svg" alt="" id="World">
+<img src="Water.svg" alt="" id="Water">
+<img src="Water2MiniMe.svg" alt="" id="Water2MiniMe">
+<img src="Water3.svg" alt="" id="Water3">
+<img src="Water4.svg" alt="" id="Water4">
+<img src="Water5.svg" alt="" id="Water5">
 
 
   <script>
-    var testCircle = document.getElementById("TestCircle");
+    var spinWorld = document.getElementById("World");
+                var spinSky = document.getElementById("Sky");
 
     var height = window.innerHeight;
     document.getElementById("body").style.height=18000+height+"px";
@@ -30,7 +37,8 @@
       var degree2 = Math.floor(degree1);
       console.log(degree1);
       console.log(degree2);
-      testCircle.style.transform = "rotate(" + degree2 + "deg)";
+                              spinSky.style.transform = "rotate(" + degree2 + "deg)";
+      spinWorld.style.transform = "rotate(" + degree2 + "deg)";
 
     };
   </script>

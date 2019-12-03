@@ -5,7 +5,6 @@ Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
-
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -18,112 +17,228 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
-    line-height:1;
+  line-height: 1;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 nav ul {
-    list-style:none;
+  list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+  quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+  content: '';
+  content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 /* change colours to suit your needs */
 ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
 mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
 }
 
 del {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+  border-bottom: 1px dotted;
+  cursor: help;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input, select {
-    vertical-align:middle;
+  vertical-align: middle;
 }
 
 body {
   height: 18000px;
 }
-#TestCircle {
+
+#World {
   position: fixed;
   top: -20vw;
   left: -450vw;
   width: 1000vw;
   height: 1000vw;
+  z-index: 0;
 }
 
-@media only screen and (min-width: 1200px){
-  #TestCircle {
+#Water {
+  position: fixed;
+  top: -20vw;
+  left: -450vw;
+  width: 1000vw;
+  height: 1000vw;
+  z-index: 5;
+}
+
+#Water2MiniMe {
+  position: fixed;
+  top: -20vw;
+  left: -450vw;
+  width: 1000vw;
+  height: 1000vw;
+  z-index: 10;
+}
+
+#Sky {
+  position: fixed;
+  top: -20vw;
+  left: -450vw;
+  width: 1000vw;
+  height: 1000vw;
+  z-index: -20;
+}
+
+@media only screen and (min-width: 1200px) {
+  #World {
     position: fixed;
     top: -10vw;
     left: -200vw;
     width: 500vw;
     height: 500vw;
+    z-index: 0;
+  }
+  #Water {
+    position: fixed;
+    top: -5vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: 5;
+    animation-name: water;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  #Water2MiniMe {
+    position: fixed;
+    top: -5vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: 10;
+    animation-name: water2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  #Water3 {
+    position: fixed;
+    top: -5vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: 15;
+    animation-name: water;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  #Water4 {
+    position: fixed;
+    top: -5vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: 20;
+    animation-name: water2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  #Water5 {
+    position: fixed;
+    top: -5vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: 25;
+    animation-name: water;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
 }
 
-@media only screen and (min-width: 600px){
-  #TestCircle {
+@keyframes water {
+  0 {
+    transform: rotate(0.5deg)
+  }
+
+  50% {
+    transform: rotate(-0.5deg)
+  }
+}
+
+@keyframes water2 {
+  0 {
+    transform: rotate(-0.5deg)
+  }
+
+  50% {
+    transform: rotate(0.5deg)
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #Sky {
+    position: fixed;
+    top: -10vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: -10;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #World {
     position: fixed;
     top: -10vw;
     left: -225vw;

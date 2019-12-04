@@ -112,6 +112,14 @@ body {
   height: 1000vw;
   z-index: 0;
 }
+#Flags {
+  position: fixed;
+  top: -20vw;
+  left: -450vw;
+  width: 1000vw;
+  height: 1000vw;
+  z-index: 3;
+}
 
 #Water {
   position: fixed;
@@ -234,6 +242,14 @@ body {
     width: 500vw;
     height: 500vw;
     z-index: 0;
+  }
+  #Flags {
+    position: fixed;
+    top: -10vw;
+    left: -200vw;
+    width: 500vw;
+    height: 500vw;
+    z-index: 3;
   }
   #Water {
     position: fixed;

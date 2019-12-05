@@ -27,6 +27,9 @@
 
 
   <script>
+
+  var x = true;
+
     var spinWorld = document.getElementById("World");
                 var spinSky = document.getElementById("Sky");
                                 var spinFlags = document.getElementById("Flags");
@@ -36,8 +39,13 @@
 
   spinFlags.style.opacity = "0.75";
 
+
+
+
     window.onscroll = function() {
+//  if (x){
       var distance = window.pageYOffset;
+  //  }
       var totalDistance = distance + height;
       console.log(distance);
       console.log("totalDistance: " + totalDistance);
@@ -126,7 +134,8 @@
               spinFlags.style.transitionDuration = "0.5s";
             }
 
-    };
+    }
+
   </script>
 </body>
 
